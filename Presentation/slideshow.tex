@@ -1,0 +1,68 @@
+\documentclass[envcountsect]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsfonts,amsthm, amssymb, mathrsfs, yfonts} % Math packages
+\usepackage{cancel}
+\usepackage{graphicx}
+
+\usetheme{Madrid}
+\setbeamertemplate{theorems}[ams style]
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{itemize items}{--}
+
+\usepackage{ulem}
+\usepackage{pgf, tikz}
+\usetikzlibrary{arrows, automata}
+
+
+\newcommand{\FF}{{\mathbb F}}
+\newcommand{\RR}{{\mathbb R}}
+\newcommand{\ZZ}{{\mathbb Z}}
+\newcommand{\PP}{{\mathcal P}}
+\newcommand{\A}{{\mathcal A}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\K}{\mathcal{K}}
+\newcommand{\G}{\mathcal{G}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\R}{\mathcal{R}}
+\newcommand{\acc}{\Gamma}
+\newcommand{\con}{\! \parallel \!}
+\newcommand{\cl}{\text{cl}}
+\newcommand{\KK}{\mathcal{K}}
+\newcommand{\kk}{\mathbf{k}}
+\renewcommand{\SS}{\mathcal{S}}
+\newcommand{\F}{{\mathscr F}}
+\newcommand{\s}{{\mathfrak s}}
+\renewcommand{\i}{{\mathfrak i}}
+\renewcommand{\v}{{\mathfrak v}}
+
+\newcommand{\card}[1]{\left\vert {#1} \right\vert}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{pf}{Proof}[thm]
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{lema}[thm]{Lemma}
+
+\title{Attitude Estimation with Extended Kalman Filter}
+\author{Petar Hlad Colic}
+\institute{CSAS \\ ETSETB - UPC}
+\date{June 2022}
+
+\begin{document}
+    \frame{\titlepage}
+    
+    \frame{\tableofcontents}
+    
+    \input{parts/intro}
+    
+    \input{parts/setup}
+    
+    \input{parts/kalman}
+    
+    \input{parts/measurements}
+    
+    \input{parts/conclusions}
+\end{document}
