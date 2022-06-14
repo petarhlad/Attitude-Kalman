@@ -1,0 +1,184 @@
+\usepackage[a4paper,left=2.8cm,right=2.8cm,top=2.8cm,bottom=2.8cm]{geometry}
+%\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+%\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage[utf8]{inputenc}  %allows non-English characters
+\usepackage{amsmath,amsfonts,amsthm, amssymb, mathrsfs, yfonts} % Math packages
+\usepackage{float}
+
+\usepackage{titlesec}
+\usepackage{indentfirst}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[nottoc]{tocbibind}
+
+\usepackage{verbatim}
+\usepackage{titlesec}
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage{fancyvrb}
+\fvset{frame=single,framesep=1mm,commandchars=\\\{\}}
+\usepackage[pdftex]{hyperref,color,graphicx}
+%\usepackage[pdftex]{hyperref}
+\usepackage{import}
+%\usepackage[pdftex,bookmarks,colorlinks]{hyperref}
+\usepackage{url}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{rotating}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage[Conny]{fncychap}
+\usepackage{listings}
+\usepackage{caption}
+\renewcommand{\lstlistingname}{Code}
+\makeatletter
+\renewcommand{\DOCH}{%
+    \vskip -4.5\baselineskip
+    \mghrulefill{3\RW}\par\nobreak
+    %\vskip -0.5\baselineskip
+    \mghrulefill{\RW}\par\nobreak
+    \CNV\FmN{\@chapapp}\space \CNoV\thechapter
+    \par\nobreak
+    \vskip -0.5\baselineskip
+   }
+  \renewcommand{\DOTI}[1]{%
+    \mghrulefill{\RW}\par\nobreak
+    \CTV\FmTi{#1}\par\nobreak
+    \vskip 30\p@
+    }
+  \renewcommand{\DOTIS}[1]{%
+    \mghrulefill{\RW}\par\nobreak
+    \CTV\FmTi{#1}\par\nobreak
+    \vskip 60\p@
+    }
+\makeatother
+
+% subfigure and wrapping on figures
+\usepackage{subcaption}
+\usepackage{wrapfig}
+
+\usepackage[intoc]{nomencl}
+\makenomenclature
+
+\hypersetup{
+pdftitle={Anonymous Threshold Signatures},
+pdfauthor={Hlad Colic, Petar},
+%pdfsubject={},
+%pdfkeywords={},
+colorlinks,
+linkcolor=black,
+citecolor=black,
+urlcolor=blue,
+unicode=false
+}
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[C]{}
+\fancyhead[RO]{\footnotesize\bfseries}
+\fancyhead[LE]{\footnotesize\bfseries}
+%\fancyhead[LO,RE]{}
+
+\setcounter{secnumdepth}{4} 
+\graphicspath{{../figs/}}
+
+%Include degree symbol in plain text
+\usepackage{gensymb}
+
+
+%Notes on the page (toggle last lines)
+\usepackage[colorinlistoftodos]{todonotes}
+\setlength{\marginparwidth}{2cm}
+\newcommand{\mytodo}[1]{\todo[size=\footnotesize]{#1}}
+
+%\usepackage{biblatex}
+\usepackage{enumitem}
+
+\usepackage{flafter}
+\usepackage{multirow}
+\newcolumntype{M}[1]{>{\arraybackslash}p{#1}}
+\newcolumntype{N}{@{}m{0pt}@{}}
+\usepackage{pbox}
+\usepackage[gen]{eurosym}
+%\newcommand{\euro}{euroWARNING}
+
+\lstdefinestyle{tt}{
+breakatwhitespace=true,
+breaklines     = true,
+  frame=top,frame=bottom,
+  basicstyle=\small\normalfont\sffamily,    % the size of the fonts that are used for the code
+   stepnumber=1,
+   numbersep=10pt,                     % how far the line-numbers are from the code
+   numbers=left,
+   numberstyle=\tiny\color{gray},
+  tabsize=2,                              % tab size in blank spaces                     %
+  breaklines=true,                        % sets automatic line breaking
+  captionpos=t,                           % sets the caption-position to top
+    showspaces=false,           % Leerzeichen anzeigen ?
+  showtabs=false,             % Tabs anzeigen ?
+  xleftmargin=17pt,
+  framexleftmargin=17pt,
+  framexrightmargin=17pt,
+  framexbottommargin=5pt,
+  framextopmargin=5pt,
+  showstringspaces=false
+ }
+\DeclareCaptionFormat{listing}{#1#2#3}
+\captionsetup[lstlisting]{format=listing,singlelinecheck=false, margin=0pt, font={sf}}
+
+\usepackage{adjustbox}
+
+\usepackage{pdfpages}
+\usepackage{afterpage}
+
+% I only need the arrows for this one.
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+% Package to strikeout text
+\usepackage[normalem]{ulem}
+
+%shortcuts for typing variance and expectation
+
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\FF}{{\mathbb F}}
+\newcommand{\RR}{{\mathbb R}}
+\newcommand{\ZZ}{{\mathbb Z}}
+\newcommand{\PP}{{\mathcal P}}
+\newcommand{\A}{{\mathcal A}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\K}{\mathcal{K}}
+\newcommand{\G}{\mathcal{G}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\acc}{\Gamma}
+\newcommand{\con}{\! \parallel \!}
+\newcommand{\cl}{\text{cl}}
+\newcommand{\KK}{\mathcal{K}}
+\newcommand{\kk}{\mathbf{k}}
+\renewcommand{\SS}{\mathcal{S}}
+\newcommand{\F}{{\mathscr F}}
+\newcommand{\s}{{\mathfrak s}}
+\renewcommand{\i}{{\mathfrak i}}
+\renewcommand{\v}{{\mathfrak v}}
+
+\newcommand{\card}[1]{\left\vert {#1} \right\vert}
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{prop}[thm]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{prob}[thm]{Problem}
+\newtheorem{defn}[thm]{Definition} 
+\newtheorem{exmp}[thm]{Example}
+\newtheorem{remk}[thm]{Remark}
+\newtheorem*{keygen}{Key generation}
+\newtheorem*{sign}{Signing}
+\newtheorem*{ver}{Verification}

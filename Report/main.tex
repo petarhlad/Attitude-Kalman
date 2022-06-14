@@ -1,0 +1,39 @@
+\documentclass[12pt,a4paper,twoside,openright]{article}
+
+\input{config.tex}
+%\usepackage[backend=bibtex, style=alphabetic, maxnames=4, minnames=3, maxbibnames=99]{biblatex}
+
+\usepackage{pdfpages}
+\usepackage{appendix}
+\usepackage{caption}
+\usepackage{subcaption}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DeclareRobustCommand{\hesham}[1]{ {\begingroup\sethlcolor{yellow}\hl{(hesham: #1)}\endgroup} }
+\DeclareRobustCommand{\petar}[1]{ {\begingroup\sethlcolor{green}\hl{(petar: #1)}\endgroup} }
+
+\begin{document}
+
+\title{CSAS Project Report \\ Attitude Estimation with Extended Kalman Filter}
+% author names and affiliations
+\author{Petar Hlad \\
+\texttt{petar.hlad@estudiantat.upc.edu}}
+
+\maketitle
+
+    \input{parts/intro}
+    
+    \input{parts/setup}
+    
+    \input{parts/kalman}
+    
+    \input{parts/measurements}
+    
+    \input{parts/conclusions}
+
+\bibliographystyle{unsrt}
+\bibliography{refs}
+
+
+\end{document}
+
+

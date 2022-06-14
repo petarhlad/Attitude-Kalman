@@ -1,0 +1,22 @@
+TY  - JOUR
+AU  - Cawley, Seamus
+AU  - Morgan, Fearghal
+AU  - McGinley, Brian
+AU  - Pande, Sandeep
+AU  - McDaid, Liam
+AU  - Carrillo, Snaider
+AU  - Harkin, Jim
+PY  - 2011
+DA  - 2011/09/01
+TI  - Hardware spiking neural network prototyping and application
+JO  - Genetic Programming and Evolvable Machines
+SP  - 257
+EP  - 280
+VL  - 12
+IS  - 3
+AB  - EMBRACE has been proposed as a scalable, reconfigurable, mixed signal, embedded hardware Spiking Neural Network (SNN) device. EMBRACE, which is yet to be realised, targets the issues of area, power and scalability through the use of a low area, low power analogue neuron/synapse cell, and a digital packet-based Network on Chip (NoC) communication architecture. The paper describes the implementation and testing of EMBRACE-FPGA, an FPGA-based hardware SNN prototype. The operation of the NoC inter-neuron communication approach and its ability to support large scale, reconfigurable, highly interconnected SNNs is illustrated. The paper describes an integrated training and configuration platform and an on-chip fitness function, which supports GA-based evolution of SNN parameters. The practicalities of using the SNN development platform and SNN configuration toolset are described. The paper considers the impact of latency jitter noise introduced by the NoC router and the EMBRACE-FPGA processor-based neuron/synapse model on SNN accuracy and evolution time. Benchmark SNN applications are described and results demonstrate the evolution of high quality and robust solutions in the presence of noise. The reconfigurable EMBRACE architecture enables future investigation of adaptive hardware applications and self repair in evolvable hardware.
+SN  - 1573-7632
+UR  - https://doi.org/10.1007/s10710-011-9130-9
+DO  - 10.1007/s10710-011-9130-9
+ID  - Cawley2011
+ER  - 
